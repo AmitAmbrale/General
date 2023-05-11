@@ -1,16 +1,27 @@
-//static storage class
 #include<stdio.h>
-void Display()
+
+void Display(int iNo)
 {
-    static int a=0;
-    a++;
-    printf("%d\n",a);
+    int iCnt=0;
+
+    if(iNo <= 0)//Filter
+    {
+        printf("Invalid input : Please enter a positive number\n");
+        return ;
+    }
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
 }
 int main()
 {
-  int iCnt=0;
-  for(iCnt=1;iCnt<=10;iCnt++)
-  {
-    Display();
-  }
+    int iValue;
+
+    printf("Enter number : ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
+    return 0;
 }

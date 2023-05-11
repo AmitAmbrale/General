@@ -1,13 +1,21 @@
-// Area of rectangle
-#include <stdio.h>
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d : Jay Ganesh...\n",iCnt);
+    }
+}
 int main()
 {
-    int length, breath, Area;
-    printf("Enter length of the rectangle:\n");
-    scanf("%d", &length);
-    printf("Enter breath of the rectangle:\n");
-    scanf("%d", &breath);
-    Area = length * breath;
-    printf("Area of the rectangle is %d", Area);
+    int iValue;
+
+    printf("Enter number : ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
     return 0;
 }

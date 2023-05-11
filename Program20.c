@@ -1,21 +1,27 @@
-//Positive or negattive
 #include<stdio.h>
+
+int Length(char *str)
+{
+    int iCnt=0;
+
+    while(*str != '\0')
+    {
+        str++;
+        iCnt++;
+    }
+    return iCnt;
+}
 int main()
 {
-    int Number=0;
-    printf("Enter number:");
-    scanf("%d",&Number);
-    if(Number<0)
-    {
-        printf("Given number is negative");
-    }
-    else if(Number>0)
-    {
-        printf("Given number is positive");
-    }
-    else
-    {
-        printf("Given numebr is zero");
-    }
+    int Arr[10];
+    int iRet=0;
+
+    printf("Enter you name : \n");
+    scanf("%s",Arr);
+
+    iRet=Length(Arr);
+
+    printf("Length of string is : %d",iRet);
+
     return 0;
 }

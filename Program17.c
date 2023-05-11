@@ -1,23 +1,32 @@
-//Maximum between two numbwrs
 #include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+
+    if(iNo < 0) // Updater
+    {
+        iNo=-iNo;
+    }
+
+    if(iNo == 0)
+    {
+        printf("Please enter non-zero number\n");
+    }
+
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
+}
 int main()
 {
-    int no1=0;
-    int no2=0;
-    printf("Enter number1:");
-    scanf("%d",&no1);
-    printf("Enter numer2:");
-    scanf("%d",&no2);
-    if(no1>no2)
-    {
-        printf("Maximum Number is %d",no1);
-    }
-    else if(no2>no1)
-    {
-        printf("Maximum Number is %d",no2);
-    }
-    else{
-        printf("Both numbers are same");
-    }
+    int iValue;
+
+    printf("Enter number : ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
     return 0;
 }

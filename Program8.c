@@ -1,14 +1,35 @@
-//Radius and circumference of the circle
 #include<stdio.h>
-#define pi 3.14
+#include<stdbool.h>
+
+bool Divisible(int iNo)
+{
+    if(((iNo%3) == 0) && ((iNo%5) == 0))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 int main()
 {
-    int Area=0,Radius=0,Circumference=0;
-    printf("Enter radius of circle:\n");
-    scanf("%d",&Radius);
-    Area=pi*Radius*Radius;
-    printf("Area of the circle is %d\n",Area);
-    Circumference=2*pi*Radius;
-    printf("Circumference of the circle is %d\n",Circumference);
+    int iValue=0;
+    bool bRet=0;
+
+    printf("Enter any number : ");
+    scanf("%d",&iValue);
+
+    bRet=Divisible(iValue);
+
+    if(bRet == true)
+    {
+        printf("%d is divisible by 5 And 3\n",iValue);
+    }
+    else
+    {
+        printf("%d is not divisible by 5 And 3\n",iValue);
+    }
+
     return 0;
 }

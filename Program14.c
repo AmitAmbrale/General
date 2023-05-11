@@ -1,12 +1,30 @@
-//circumference of cirle
 #include<stdio.h>
-#define pi 3.14
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    if(iNo < 0)//Updater
+    {
+        iNo=-iNo;        
+    }
+    if(iNo == 0)
+    {
+        printf("You have entered zero\n");
+        return ;
+    }
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d : Jay Ganesh...\n",iCnt);
+    }
+}
 int main()
 {
-    int Radius=0,Circumference=0;
-    printf("Enter the radius of the circle:\n");
-    scanf("%d",&Radius);
-    Circumference=2*pi*Radius;
-    printf("Circumference of the circle is %d",Circumference);
+    int iValue;
+
+    printf("Enter number : ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
     return 0;
 }

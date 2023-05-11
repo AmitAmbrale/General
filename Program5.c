@@ -1,18 +1,16 @@
-//Swapping of two numbers
-#include<stdio.h>
+#include"Program4.h"
+
 int main()
 {
-    int number1=0;
-    int number2=0;
-    int temp=0;
-    printf("Enter number 1:\n");
-    scanf("%d",&number1);
-    printf("Enter number 2:\n");
-    scanf("%d",&number2);
-    printf("Before swapping number1=%d and number2=%d\n",number1,number2);
-    temp=number1;
-    number1=number2;
-    number2=temp;
-    printf("After swapping number1=%d and number2=%d\n",number1,number2);
+    int iValue1=0,iValue2=0;
+    int iAns=0;
+
+    printf("Enter any two numbers : \n");
+    scanf("%d%d",&iValue1,&iValue2);
+
+    iAns=Addition(iValue1,iValue2);
+
+    printf("Addition is : %d\n",iAns);
+
     return 0;
 }

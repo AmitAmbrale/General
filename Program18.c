@@ -1,20 +1,29 @@
-//Even odd
 #include<stdio.h>
-void Display()
+
+void Table(int iNo)
 {
-    int number1=0;
-    printf("Enetr number1 :");
-    scanf("%d",&number1);
-    if(number1 % 2 == 0)
+    int iCnt=0;
+
+    if(iNo == 0)
     {
-     printf("Given number is even");
+        printf("You have entered zero\n");
+        return ;
     }
-    else
+    printf("Table for %d is : \n",iNo);
+
+    for(iCnt=1;iCnt<=10;iCnt++)
     {
-        printf("Given number is odd");
+        printf("%d * %d = %d\n",iNo,iCnt,(iNo*iCnt));
     }
 }
 int main()
 {
-    Display();
+    int iValue=0;
+
+    printf("Enter any number : \n");
+    scanf("%d",&iValue);
+
+    Table(iValue);
+
+    return 0;
 }

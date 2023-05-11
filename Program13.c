@@ -1,12 +1,27 @@
-//Area of circle
 #include<stdio.h>
-#define pi 3.14
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    if(iNo <= 0)//Filter
+    {
+        printf("Invalid Input : ");
+        printf("Please enter a positive number\n");
+        return ;
+    }
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d : Jay Ganesh...\n",iCnt);
+    }
+}
 int main()
-{   
-    int Area=0,Radius=0;
-    printf("Enter radius of circle:\n");
-    scanf("%d",&Radius);
-    Area=pi*Radius*Radius;
-    printf("Area of the circle is %d\n",Area);
+{
+    int iValue;
+
+    printf("Enter number : ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
     return 0;
 }

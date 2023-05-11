@@ -1,16 +1,20 @@
-//Subtraction of two numbers
-#include"stdio.h"
-int main()
+#include<stdio.h>
 
+int main()
 {
-    int Digit1=0;
-    int Digit2=0;
-    int Subtraction=0;
-    printf("Enter Digit 1:\n");
-    scanf("%d",&Digit1);
-    printf("Enter Digit 2:\n");
-    scanf("%d",&Digit2);
-    Subtraction=Digit1-Digit2;
-    printf("Subtraction of two digits is %d",Subtraction);
+
+    int iValue1=0,iValue2=0;
+    int iAns=0;
+
+    printf("Enter first number : ");
+    scanf("%d",&iValue1);
+
+    printf("Enter second number : ");
+    scanf("%d",&iValue2);
+
+    iAns=iValue1+iValue2;
+
+    printf("Addition is : %d",iAns);
+
     return 0;
 }

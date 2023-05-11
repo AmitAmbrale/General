@@ -1,15 +1,14 @@
-//Addition of two numbers
+//  Addition of two numbers using static input
 #include<stdio.h>
+
 int main()
 {
-    int number1=0;
-    int number2=0;
-    int Addition=0;
-    printf("Enter number 1:\n");
-    scanf("%d",&number1);
-    printf("Enter number 2:\n");
-    scanf("%d",&number2);
-    Addition=number1+number2;
-    printf("Addition of two numbers is %d",Addition);
+    int iValue1=10,iValue2=11;
+    int iAns=0;
+
+    iAns=iValue1+iValue2;
+
+    printf("Addition is : %d",iAns);
+
     return 0;
 }
