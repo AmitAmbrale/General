@@ -50,7 +50,7 @@ class MapX
     {
         Map hm = new HashMap();
 
-        hm.put(101, "Amit");
+        hm.put(101, "Sumit");
         hm.put(102, "Mayuresh");
         hm.put(103, "Sidd");
 
@@ -70,4 +70,5 @@ class MapX
 
         System.out.println(hm);
     }
+
 }
