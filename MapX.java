@@ -50,10 +50,7 @@ class MapX
     {
         Map hm = new HashMap();
 
-<<<<<<< Updated upstream
         hm.put(101, "Amit");
-=======
->>>>>>> Stashed changes
         hm.put(102, "Mayuresh");
         hm.put(103, "Sidd");
 
